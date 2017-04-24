@@ -1,42 +1,25 @@
 {
-  "name": "react-native-maps",
-  "description": "React Native Mapview component for iOS + Android",
-  "main": "index.js",
-  "author": "Leland Richardson <leland.m.richardson@gmail.com>",
-  "version": "0.13.0",
+  "name": "ReactDemoProject",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "react-native start",
-    "lint": "eslint ."
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/airbnb/react-native-maps"
-  },
-  "keywords": [
-    "react",
-    "react-native",
-    "react-component",
-    "map",
-    "mapview",
-    "google-maps",
-    "mapkit"
-  ],
-  "peerDependencies": {
-    "react": ">=15.4.0",
-    "react-native": ">=0.40"
+  "dependencies": {
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.43.0",
+    "react-native-circular-progress": "0.0.8",
+    "react-native-spinkit": "^1.0.2",
+    "react-navigation": "^1.0.0-beta.7"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^3.3.1",
-    "eslint-config-airbnb": "^10.0.1",
-    "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-jsx-a11y": "^2.1.0",
-    "eslint-plugin-prefer-object-spread": "^1.1.0",
-    "eslint-plugin-react": "^6.1.2"
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-test-renderer": "16.0.0-alpha.6"
   },
-  "rnpm": {
-    "android": {
-      "sourceDir": "./android"
-    }
+  "jest": {
+    "preset": "react-native"
   }
 }
